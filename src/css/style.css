@@ -1,0 +1,130 @@
+body {
+  background-color: #282828;
+  color: #fff;
+}
+
+
+.cabecalho{
+    height: 80px;
+    background-color: #0B0B0B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+
+}
+
+
+.cabecalho .logo-menu{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+}
+
+
+.cabecalho .menu li a{
+    padding: 30px;
+    color: #E8E8E8;
+   
+    font-size: 15px;
+    font-family: 'chalet';
+}
+
+
+.cabecalho .menu li a:hover{
+    border-bottom: 2px solid #fff ;
+}
+
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0, .7) 35%, transparent 65%);
+    /*GRADIENTE POR CIMA DA IMAGEM*/
+}
+
+
+.home .img-background{
+    width: 100%;
+    object-fit: cover;/*FAZ COM QUE A IMG NAO PERCA PROPORÇÃO QUANDO TELA DIMINUIDA*/
+}
+
+.home .information{
+    position: absolute; /*JOGA O ITEM EM CIMA DE OUTRO*/
+    z-index: 1;/*INFORMANDO QUE A IMAGEM TEM MAIS PRIORIDADE QUE OUTRA*/
+    min-height: calc(100vh - 80px); /*AUMENTANDO A ALTURA DENTRO DA IMAGEM PARA CENTRALIZAR AS img*/  
+   
+   /*CENTRALIZANDO O CONTEUDO DENTRO DA .informatin*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px; 
+    max-width: 780px;
+}
+
+.home .information img{
+    max-width: 150px; /* min-height: calc(100vh - 80px): AUMENTO A ALTURA DE 150PX */
+    
+}
+
+.home .information .game-list{
+    display: flex;
+    gap: 32px;
+
+}
+
+
+.home .information h1{
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+
+.home .information p{
+    font-family: 'Chalet';
+    font-size: 18px;
+    line-height: 1.6;
+    
+}
+
+
+.home .information a{
+    background-color: rgba(255,255,255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 2px;
+
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.botoes a:hover{
+    background: #fff;
+    color: #000;
+    }
+
+.botoes {
+    display: flex;
+    gap: 30px;
+}
+
