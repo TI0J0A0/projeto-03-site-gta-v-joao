@@ -7,13 +7,16 @@
 
     <link rel="shortcut icon" href="src/img/icon-rockstar.png" type="image/x-icon" />
     <link  href="https://fonts.cdnfonts.com/css/chalet" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/fonts.css"/>
+    <link rel="stylesheet" href="src/css/trailer.css"/>
   </head>
+
   <body>
-    <header class="cabecalho">
+    <header class="cabecalho" id="cabecalho">
       <div class="logo-menu">
         <img src="src/img/logo-rockstar.svg" alt="Logo da Rockstar Games" />
         <hr />
@@ -22,11 +25,11 @@
 
       <nav>
         <ul class="menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">To buy</a></li>
-          <li>
-            <a href="https://support.rockstargames.com/" target="_blank">Suport <img src="src/img/icone-link.svg" alt="icone link suport" /></a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#to-buy">buy</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="https://support.rockstargames.com/" target="_blank">Suport <img src="src/img/icone-link.svg" alt="icone link suport" /></a>
            
           </li>
         </ul>
@@ -43,22 +46,336 @@
             <img src="src/img/logo-gta-online.svg" alt="Logo GTA Online" />
           </div>
 
-          <h1>Já disponíveis para PlayStation 5 e Xbox Series X|S</h1>
+          <h1>Já disponíveis para<br> 
+            PlayStation 5 e Xbox Series X|S</h1>
           <p>
             Experimente os fenômenos do entretenimento Grand Theft Auto V e GTA
             Online.
           </p>
 
           <div class="botoes"> 
-            <a class="btn-trailer" href=""  target="_blank">Assistir Trailer</a>
-            <a class="btn-buy" href="to-buy">Compre Já</a>
+            <a class="btn-trailer" onclick="abrirVideo();">Assistir Trailer</a>
+            <a class="btn-buy" href="#to-buy">Compre Já</a>
           </div>
 
+      
+           <div class="videoTrailer">
+             <video src="src/video/GTA 5 - Trailer.mp4" controls="true"></video>
+             <img class="videoClose" src="src/img/close.png" onclick="fecharVideo();" alt="icone de fechar o video">
+          </div>
       </div>
-
-      <!-- CONTINUAÇÃO DO MAIN - PARTE DO JOAO -->
     </main>
 
-    <footer class="end"></footer>
+    <section class="about-gta-v" id="about">
+
+      <div class="details-gta-v">
+          <img class="bckgd-section" src="src/img/bg-section.jpg" alt="imagem de fundo gtav">
+          
+          <div class="contents-gta-v"> 
+            <img src="src/img/personagens.png" alt="imagem dos personagens do gta v">  
+
+              <div class="informations-gta-v">
+                <img src="src/img/logo-gta-v.svg" alt="Logo do GTA V">
+
+                <h1>Bem-vindo a Los Santos</h1>
+
+                <p>Quando um jovem traficante de rua, um assaltante de banco<br>
+                  aposentado e um psicopata aterrorizante se veem envolvidos com<br>
+                  alguns dos elementos mais assustadores e enlouquecidos do<br>
+                  submundo do crime, do governo dos EUA e da indústria do<br>
+                  entretenimento, eles precisam realizar uma série de assaltos<br>
+                  perigosos para sobreviver em uma cidade implacável na qual não<br>
+                  podem confiar em ninguém – muito menos uns nos outros.
+                </p>
+
+                <br/> 
+
+                <p>Os jogadores atuais podem transferir o progresso do GTA V Story<br>
+                  Mode e os personagens e progressão de GTA Online para<br>
+                  PlayStation 5 e Xbox Series X|S com uma migração única.
+                </p>
+              </div>
+          </div> 
+        </div>
+    </section>
+
+<!-- ======================== ABOUT GTA ONLINE ========================// -->
+
+    <section class="about-gta-online">
+        <div class="details-gta-online">
+          <img class="bckgd-section2" src="src/img/bg-section2.jpg" alt="imagem de fundo gta online">
+          
+          <div class="contents-gta-online">
+            <div class="information-gta-online">
+              <img src="src/img/logo-gta-online.svg" alt="logo do GTA ONLINE">
+              
+              <h1>Grand Theft Auto Online</h1>
+
+              <p>
+                Explore GTA Online, um universo online dinâmico em<br>
+                constante evolução para até 30 jogadores, onde você começa<br>
+                como um malandro de rua e pode se tornar o rei do seu<br>
+                próprio império do crime.
+              </p>
+              <br/>
+              <p>
+                Explore um mundo aberto gigantesco, cheio de possibilidades,<br>
+                desafios e diversão. Você pode criar o seu próprio personagem,<br> 
+                personalizando o seu visual, o seu estilo e as suas habilidades.<br>
+                Você pode se juntar a outros jogadores para realizar missões,<br>
+                assaltos, corridas, guerras de gangues e muito mais.<br>
+              </p>
+            </div>
+            <img src="src/img/personagens online.png" alt="imagem do gta online">
+          </div>
+        </div>
+    </section>
+    
+<!-- ====================================================================*/ -->
+<!-- ======================== gta-characters ======================== -->
+    <section class="about-gta-characters">
+        <div class="details-gta-characters">
+          <img class="bckgd-section3" src="src/img/gta-v-trio.jpg" alt="imagem de fundo personagens do gta v">
+           
+          <div class="video-gta-characters">
+
+                <div class="video-gta">
+                  <video class="video" width="100%" height="auto" playsinline="" autoplay="" loop="" muted="">
+                    <source type="video/mp4" src="src/video/GTA 5 - Michael.mp4">
+                  </video>
+
+                  <div class="description">
+                    <h3>Michael</h3>
+                    <br>
+                    <p>
+                      Ao longo da história, Michael enfrenta
+                      dilemas morais e tenta equilibrar suas
+                      obrigações familiares com seu desejo de
+                      ação e emoção. Sua narrativa é marcada por
+                      reviravoltas, drama familiar e confrontos
+                      perigosos, refletindo a abordagem cinematográfica
+                      típica da série GTA.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="video-gta">
+                  <video class="video-" width="100%" height="auto" playsinline="" autoplay="" loop="" muted="">
+                    <source type="video/mp4" src="src/video/GTA 5 - Franklin.mp4">
+                  </video>
+
+                  <div class="description">
+                    <h3>Franklin</h3>
+                    <br>
+                    <p>
+                      É um ex-membro de uma gangue de rua que busca uma vida melhor,
+                      mas se envolve em vários crimes.
+                      Franklin é esperto, determinado e fiel aos seus amigos, 
+                      mas também enfrenta conflitos com sua família e sua antiga gangue. 
+                      Ele tem um cachorro chamado Chop e é dublado pelo ator Shawn Fonteno.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="video-gta">
+                  <video class="video" width="100%" height="auto" playsinline="" autoplay="" loop="" muted="">
+                    <source type="video/mp4" src="src/video/GTA 5 - Trevor.mp4">
+                  </video>
+
+                  <div class="description">
+                    <h3>Trevor</h3>
+                    <br>
+                    <p>
+                      Ele é um criminoso insano e psicopata que fundou sua própria empresa, 
+                      Trevor Philips Enterprises, que lida com tráfico de drogas e armas. 
+                      Ele é amigo de Michael De Santa, um ex-ladrão de bancos, e de Franklin Clinton,
+                      um jovem gângster que se junta a eles em diversas missões. 
+                      Trevor é violento, impulsivo e leal, mas também tem problemas com sua mãe, 
+                      sua ex-namorada e seus inimigos.
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="to-buy-gta" id="to-buy">
+        <h2 class="title">Compre Já</h2>
+
+        <div class="cards">
+             
+            <div  class="card-gta">
+              <img  class="cover-gta" src="src/img/gta 5 online.webp" alt="CAPA DO GTA ONLINE">
+           
+
+              <div class="informations">
+                  <h3>Grand Theft Auto V</h3>
+
+                  <p>
+                    Inclui <strong>GTA Online</strong>
+                  </p>
+
+                  <ul class="plataforms">
+                      <li>
+                        <img src="src/img/logo-ps5.svg" alt="Logo Playstation 5">
+                      </li>
+
+
+                      <li>
+                        <img src="src/img/logo-xbox-series-s.svg" alt="Logo Xbox series X|S">
+                      </li>
+                  </ul>
+                </div>
+
+               
+
+                  <button class="btn-plataform"> Selecione a plataforma
+
+                    <ul class="plataforms">
+                      <li>
+                        <img src="src/img/logo-ps5.svg" alt="Logo Playstation 5">
+                      </li>
+      
+      
+                      <li>
+                        <img src="src/img/logo-xbox-series-s.svg" alt="Logo Xbox series X|S">
+                      </li>
+                    </ul>
+                  </button>
+                  <img class="bckgd-card" src="src/img/bgcompra-online.jpg" alt="BACKGROUND DO GTA ONLINE">
+            </div>
+
+           
+
+
+
+            <div  class="card-gta">
+              <img class="cover-gta" src="src/img/gta5.jpg" alt="CAPA DO GTA V">
+
+              
+
+              <div class="informations">
+                  <h3>Grand Theft Auto V</h3>
+                  <p>
+                    Inclui <strong>modo história do GTA V</strong> e
+                    <strong>GTA Online</strong>
+                  </p>
+
+                  <ul class="plataforms buy">
+                    <li>
+                      <img src="./src/img/logo-ps5.svg" alt="Logo Playstation 5" />
+                    </li>
+                    <li>
+                      <img
+                        src="./src/img/logo-xbox-series-s.svg"
+                        alt="Logo Xbox series X|S"
+                      />
+                    </li>
+                    <li>
+                      <img src="./src/img/logo-ps4.svg" alt="Logo Playstation 4" />
+                    </li>
+                    <li>
+                      <img src="./src/img/logo-xbox-one.svg" alt="Logo Xbox One" />
+                    </li>
+                    <li>
+                      <img src="./src/img/logo-pc.svg" alt="Logo PC" />
+                    </li>
+                  </ul>
+              </div>
+
+             
+
+              <button class="btn-plataform">Selecione a plataforma
+      
+                <ul class="plataforms">
+                  <li>
+                    <img src="src/img/logo-ps5.svg" alt="Logo Playstation 5" />
+                  </li>
+                  <li>
+                    <img src="src/img/logo-xbox-series-s.svg"
+                      alt="Logo Xbox series X|S"/>
+                  </li>
+                  <li>
+                    <img src="src/img/logo-ps4.svg" alt="Logo Playstation 4" />
+                  </li>
+                  <li>
+                    <img src="src/img/logo-xbox-one.svg" alt="Logo Xbox One" />
+                  </li>
+                  <li>
+                    <img src="src/img/logo-pc.svg" alt="Logo PC" />
+                  </li>
+                </ul>
+              </button>
+              <img class="bckgd-card" src="src/img/bg-compra-gta.jpg" alt="BACKGROUND DO GTA V">
+            </div>
+        </div>
+    </section>
+
+   <!-- ========================  FOOTER ======================== -->
+
+   <footer class="footer-gta" id="credits">
+    <div class="footer-information">
+        <div class="footer-contacts">
+            <a href="#" target="_blank">Contact</a>
+            <a href="https://www.rockstargames.com/br/careers" target="_blank">Jobs</a>
+            <a href="https://socialclub.rockstargames.com/settings/email" target="_blank">
+                Subscribe <img src="src/img/icone-link.svg" alt="icone link suport" />
+            </a>
+        </div>
+        
+        <div class="footer-links">
+            <p>Contatos <span>Joao:</span></p>
+            <a href="https://www.linkedin.com/in/joaopedroaguiar99/" target="_blank">
+                <img src="src/img/icon-linkein.png" alt="imagem do icon-linkedin">
+            </a>
+            <a href="https://github.com/TI0J0A0" target="_blank">
+                <img src="src/img/icon-git1.png" alt="imagem do github">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-social-media">
+        <div class="age-restriction">
+            <img src="src/img/image.png" alt="icone do +18">
+        </div>
+
+        <div class="socials-medias">
+            <a href="#" class="footer-links-social-media">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="footer-links-social-media">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-links-social-media">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="footer-links-social-media">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="footer-links-social-media">
+                <i class="fa-brands fa-twitch"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-credits">
+        <p>Rockstar Games</p>
+        <p>2024 &copy; - Site desenvolvido por <strong>Joao Pedro Aguiar</strong></p>
+    </div>
+
+    <div class="circle-top" data-anima="scroll">
+        <a href="#cabecalho">
+            <div class="topo">
+                <img src="src/img/icons8-upward-arrow-50.png" alt="botao voltar ao topo">
+            </div>
+        </a>
+    </div>
+</footer>
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/VideoTrailer.js"></script>
+    <script src="src/js/ScrollReveal.js"></script>
+    <script src="src/js/ScrollTop.js"></script>
   </body>
 </html>
