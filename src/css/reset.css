@@ -604,22 +604,6 @@ transition: all .3s ease-in;
 .to-buy-gta .btn-plataform .plataforms.buy li:nth-child():hover{
   background-color:  #464646;
 }
-/*
-.cards::before,
-.cards::after {
-  content: '';
-  position: absolute;
-  top: 555%;
-  left: 0;
-  width: 0%;
-  height: 50px; 
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.925));
-}
-
-*/
-
-/*=====================================================================*/
-/**======================== ABOUT GTA FOOTER ========================**/
 
 
 footer {

@@ -9,6 +9,7 @@ body {
   color: #fff;  
   margin: 0;
   padding: 0;
+
  
 }
 
@@ -144,10 +145,8 @@ body {
 .botoes {
     display: flex;
     gap: 30px;
+    
 }
-
-
-
 
 
 /*===============================================================*/
@@ -633,50 +632,51 @@ body {
 
 
 
-/* Estilos para o footer */
 footer {
     background: #000000;
     color: #f1f1f1;
-    padding: 20px 0; /* Espaçamento interno */
-}
+    height: 180px; 
+   align-items: center;
+   padding: 10px 20px;
+  }
 
-/* Estilos para o container principal do footer */
-.footer-gta {
+  .footer-gta{
     display: flex;
     flex-direction: column;
-    max-width: 1200px; /* Largura máxima do rodapé */
-    margin: 0 auto; /* Centraliza o conteúdo na página */
-    padding: 0 20px; /* Espaçamento interno */
-}
+  }
 
-/* Estilos para a seção de informações do footer */
-.footer-gta .footer-information {
+  .footer-gta .footer-information {
     width: 100%;
+    height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Espaçamento entre os elementos */
-}
 
-/* Estilos para os contatos dentro da seção de informações */
-.footer-gta .footer-information .footer-contacts {
+    padding: 0 70px;
+
+   /*background-color: #00439c;*/
+   
+  }
+
+
+  .footer-gta .footer-information .footer-contacts{
     font-family: 'Chalet';
     font-size: 18px;
     cursor: pointer;
     display: flex;
-    gap: 20px; /* Espaçamento entre os itens */
-}
+    gap: 20px; 
+  } 
 
- /* Estilos para os links dentro da seção de informações */
-.footer-gta .footer-information .footer-links {
+  .footer-gta .footer-information .footer-links{
     font-family: 'Chalet';
     font-size: 13px;
     color: #696969;
+
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaçamento entre os itens */
-}
+    gap: 8px;
+  }
 
   .footer-gta .footer-information .footer-links span{
     font-weight: bolder;
@@ -690,13 +690,15 @@ footer {
 
 .footer-gta .footer-social-media{
     width: 100%;
+    
     /*background-color: #387a26;*/
 }
 
 
+
 .footer-gta .footer-social-media{
     width: 100%;
-    height: 30%;
+    height: 60%;
 
     display: flex;
     justify-content: space-between;
@@ -735,29 +737,28 @@ footer {
     color: #fcaf17;
 }
 
+
 .circle-top .topo{
     background-color: #000000;
-    position: flex;
+    position: fixed;
     bottom: 20px;
     right: -500px;
-
     width: 10px;
-    height: 10px;
-
-    border-radius: 10%;
+    height: 20px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
 
-    transition: all 2s;
+    transition: all 4s;
 }
 
 .circle-top .topo:hover{
-    background-color: #000000;
+    background-color: #fcaf17;
 }
 
 .show-button .topo{
     right: 20px;
-    transition: .2s all;
+    transition: .4s all;
 }
