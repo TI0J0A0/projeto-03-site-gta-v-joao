@@ -1,14 +1,735 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html{
+  scroll-behavior: smooth;
+  
 }
 
-ul {
-  list-style: none;
+body {
+overflow-x: hidden;  
+background-color: #161616;
+color: #fff;  
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+
+.cabecalho{
+  height: 80px;
+  background-color: #0B0B0B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  border-bottom: 1px solid #282828;
+
+}
+
+
+.cabecalho .logo-menu{
+  display: flex;
+  gap: 10px;
+
+}
+
+
+.cabecalho .menu{
+  display: flex;
+  gap: 30px;
+}
+
+
+.cabecalho .menu li a{
+  padding: 30px;
+  color: #E8E8E8;
+ 
+  font-size: 15px;
+  font-family: 'chalet';
+}
+
+
+.cabecalho .menu li a:hover{
+  border-bottom: 2px solid #fff ;
+}
+
+
+.home{
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+  border-bottom: 1px solid #282828;
+}
+
+.home::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0, .7) 35%, transparent 65%);
+  /*GRADIENTE POR CIMA DA IMAGEM*/
+}
+
+
+.home .img-background{
+  width: 100%;
+  object-fit: cover;/*FAZ COM QUE A IMG NAO PERCA PROPORÇÃO QUANDO TELA DIMINUIDA*/
+}
+
+.home .information{
+  position: absolute; /*JOGA O ITEM EM CIMA DE OUTRO*/
+  z-index: 1;/*INFORMANDO QUE A IMAGEM TEM MAIS PRIORIDADE QUE OUTRA*/
+  min-height: calc(100vh - 80px); /*AUMENTANDO A ALTURA DENTRO DA IMAGEM PARA CENTRALIZAR AS img*/  
+ 
+ /*CENTRALIZANDO O CONTEUDO DENTRO DA .informatin*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 80px 80px 170px; 
+  max-width: 780px;
+}
+
+.home .information img{
+  max-width: 150px; /* min-height: calc(100vh - 80px): AUMENTO A ALTURA DE 150PX */
+  
+}
+
+.home .information .game-list{
+  display: flex;
+  gap: 32px;
+
+}
+
+
+.home .information h1{
+  font-family: 'ChaletComprime';
+  font-size: 55px;
+}
+
+.home .information p{
+  font-family: 'Chalet';
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+
+
+.home .information a{
+  background-color: rgba(255,255,255, .1);
+  border: 0.5px solid #fff;
+  border-radius: 2px;
+
+  font-family: 'ChaletComprime';
+  font-size: 28px;
+  text-align: center;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  width: 50%;
+  transition: all .3s ease-in;
+}
+
+.botoes a:hover{
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  }
+
+.botoes {
+  display: flex;
+  gap: 30px;
+}
+
+
+
+
+
+/*===============================================================*/
+/**======================== ABOUT GTA V ========================**/
+
+.details-gta-v::before,
+.details-gta-v::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.74));
+  
+}
+
+
+
+
+.about-gta-v .details-gta-v{
+  position: relative;
+  justify-content: space-between;
+}
+
+
+
+.details-gta-v .bckgd-section{
+  width: 100%;
+  object-fit: cover;
+  width: 1920px;
+  height: 1076px;
+ 
+}
+
+
+
+.about-gta-v {
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.details-gta-v .bckgd-section{
+  width: 100%;
+  object-fit: cover;
+  height: 1076px; 
+}
+
+
+.about-gta-v .contents-gta-v {
+ position: absolute;
+ top: 0;
+ display: flex;
+ gap: 20px;
+}
+
+
+.contents-gta-v img{
+  margin-top: 100px;
+  margin-left: 60px;
+  width: 50%;
+}
+
+
+
+.informations-gta-v{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "ChaletComprime";
+}
+
+
+
+.informations-gta-v img{
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 22%;
+}
+
+
+.informations-gta-v h1{
+  font-family: 'ChaletComprime';
+font-size: 70px;
+  margin-left: 55px;
+margin-bottom: 18px;
+}
+
+
+.informations-gta-v p{
+  font-family: 'Chalet';
+font-size: 18px;
+line-height: 1.8;
+margin-left: 55px;
+margin-bottom: 25px;
+}
+
+
+
+
+
+/*====================================================================*/
+/**======================== ABOUT GTA ONLINE ========================**/
+
+.about-gta-online::before,
+.about-gta-online::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; 
+  background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0));
+}
+
+.about-gta-online{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.about-gta-online .details-gta-online .bckgd-section2{
+ margin-top: -0px;
+ width: 100%;
+ height: 1076px;
+ object-fit: cover;
+}
+
+
+.about-gta-online .contents-gta-online{
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+.about-gta-online .contents-gta-online img{
+  margin-top: 100px;
+  margin-left: 160px; 
+
+  width: 50%;
+ 
+}
+
+
+.about-gta-online .information-gta-online{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  font-family: "ChaletComprime";
+}
+
+
+.about-gta-online .information-gta-online img{
+  padding-top: 100px;
+  padding-bottom: 40px;
+  width: 20%;
+  
+
+}
+
+.about-gta-online .information-gta-online h1{
+  font-family: 'ChaletComprime';
+  font-size: 50px;
+  margin-left: 160px;
+  margin-right: 0; 
+  margin-bottom: 18px;
+}
+
+
+.about-gta-online .information-gta-online p{
+  font-family: 'Chalet';
+  font-size: 18px;
+  line-height: 1.8;
+  margin-left: 160px; 
+  margin-right: 0; 
+  margin-bottom: 25px;
+}
+
+.details-gta-online::before,
+.details-gta-v-online::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.945));
+  
+}
+
+
+
+
+
+/*========================================================================*/
+/**======================== ABOUT GTA CHARACTERS ========================**/
+
+.about-gta-characters::before,
+.about-gta-characters::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; 
+  background: linear-gradient(rgba(0, 0, 0, 0.952), rgba(0, 0, 0, 0));
+}
+
+.about-gta-characters{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.about-gta-characters .video-gta-characters{
+  position: absolute;
+  top: 0;
+  padding: 30px;
+ 
+}
+
+
+.about-gta-characters .details-gta-characters .bckgd-section3{
+ margin-top: -0px;
+ object-fit: cover;
+ width: 100%;
+ height: 1076px; 
+}
+
+
+.about-gta-characters .video-gta-characters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 9%;
+ 
+}
+
+
+.video-gta{
+  width: calc(33.33% - 30px);
+  margin-bottom: 40px;
+  background-color: #0b0b0b;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.video-gta video {
+  width: 100%;
+  border: none;
+}
+
+.video-gta .description {
+  padding: 10px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.video-gta .description h3{
+  text-align: center;
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.video-gta .description p{
+  padding: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+
+/*=====================================================================*/
+/**======================== ABOUT GTA TO-BUY ========================**/
+
+
+.btn-plataform{
+  color: #fff;
+  width: 100%;
+}
+
+
+.to-buy-gta .cover-gta{
+  width: 270px;
+}
+
+
+.to-buy-gta{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  
+}
+
+.to-buy-gta .title{
+  font-family: 'ChaletComprime';
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 50px;
+}
+
+.to-buy-gta .cards{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  z-index: 1;
+  
+}
+
+
+.to-buy-gta .card-gta {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  background-color: #000000;
+  width: 50%;
+  border-radius: 10px;
+  padding: 80px;
+  gap: 40px;
+  z-index: 1;
+  border: 0.5px solid #a7a7a7c7;
+}
+
+
+.to-buy-gta .card-gta .bckgd-card{
+  position: absolute;
+  width: 48.88%;
+  height: 45.7%;
+  top: 0.99px;
+  border-radius: 10px;
+  z-index: -1; 
+  
+  
+  mask-image: linear-gradient(to bottom, #000000, transparent 70%);
+  -ms-mask-image: linear-gradient(to bottom, #000000, transparent 70%);
+
+ 
+}
+
+
+
+.to-buy-gta .informations{
+  display: flex;
+  flex-direction: column;
+gap: 30px;
+}
+
+.to-buy-gta .informations h3{
+  font-family: 'ChaletComprime';
+font-size: 52px;
+font-weight: 700;
+
+}
+
+.to-buy-gta .informations p{
+  color: #e8e8e8;
+font-family: 'Chalet';
+font-size: 16px;
+line-height: 1.6;
+}
+
+
+.to-buy-gta .informations .plataforms{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+justify-content: center;
+}
+
+
+.to-buy-gta .btn-plataform .plataforms{
+  margin-top: 10px;
+display: flex;
+flex-direction: column;
+  gap: 20px;
+  transition: all .3s ease-in;
+display: none;
+opacity: 0;
+}
+
+
+.to-buy-gta .btn-plataform .plataforms.active{
+  display: flex;
+opacity: 1;
+}
+
+
+.btn-plataform{
+  background-color: rgba(255, 255, 255, .1);
+border: 0.5px solid #fff;
+border-radius: 4px;
+font-family: 'ChaletComprime';
+font-size: 28px;
+text-align: center;
+padding: 20px 40px;
+text-transform: uppercase;
+width: 50%;
+transition: all .3s ease-in;
+}
+
+
+.btn-plataform:hover{
+  background: #fff;
+  color: #000;
+}
+
+
+
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(1){
+  border: 1px solid #00439c;
+}
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(1):hover{
+  background-color:  #00439c;
+}
+
+
+
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(2){
+  border: 1px solid #387a26;
+}
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(2):hover{
+  background-color:  #387a26;
+}
+
+
+
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(3){
+  border: 1px solid #00439c;
+}
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(3):hover{
+  background-color:  #00439c;
+}
+
+
+
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(4){
+  border: 1px solid #387a26;
+}
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(4):hover{
+  background-color:  #387a26;
+}
+
+
+
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child(5){
+  border: 1px solid #464646;
+}
+.to-buy-gta .btn-plataform .plataforms.buy li:nth-child():hover{
+  background-color:  #464646;
+}
+
+
+footer {
+  background: #000000;
+  color: #f1f1f1;
+  height: 280px; 
+}
+
+.footer-gta{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-gta .footer-information {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 70px;
+
+ /*background-color: #00439c;*/
+ 
+}
+
+
+.footer-gta .footer-information .footer-contacts{
+  font-family: 'Chalet';
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  gap: 20px; 
+} 
+
+.footer-gta .footer-information .footer-links{
+  font-family: 'Chalet';
+  font-size: 13px;
+  color: #696969;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-gta .footer-information .footer-links span{
+  font-weight: bolder;
+}
+
+.footer-gta .footer-information .footer-links img{
+  cursor: pointer;
+  max-width: 35px; 
+}
+
+
+.footer-gta .footer-social-media{
+  width: 100%;
+  /*background-color: #387a26;*/
+}
+
+
+.footer-gta .footer-social-media{
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+
+  margin-bottom: 30px;
+}
+
+.footer-gta .footer-social-media .socials-medias {
+  cursor: pointer;
+  display: flex;
+  gap: 40px;
+  font-size: 19px;
+}
+
+
+
+.footer-gta .footer-credits{
+  font-family: 'Chalet';
+font-size: 18px;
+  width: 100%;
+  height: 20%;
+ /* background-color: #921a1a;*/
+  display: flex;
+  gap: 30%;
+  align-items: center;
+  padding: 0 70px;
+
+}
+.footer-gta .footer-information a:hover{
+  color: #fcaf17;
+}
+
+.footer-gta .footer-social-media .socials-medias a:hover{
+  color: #fcaf17;
+}
+
+.circle-top .topo{
+  background-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: -500px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  transition: all 4s;
+}
+
+.circle-top .topo:hover{
+  background-color: #fcaf17;
+}
+
+.show-button .topo{
+  right: 20px;
+  transition: .4s all;
 }
