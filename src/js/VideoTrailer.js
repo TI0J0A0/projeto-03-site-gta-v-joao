@@ -1,16 +1,16 @@
 const trailer = document.querySelector(".information .videoTrailer");
-const trailerClose = document.querySelector("video");
+const trailerVideo = document.querySelector(".information .videoTrailer video");
 
-
-function abrirVideo(){
-    trailer.classList.toggle("videoAtivo");
-    
+function abrirVideo() {
+    trailer.classList.add("videoAtivo");
+    trailerVideo.play();
 }
 
-
-function fecharVideo(){
-    trailer.classList.toggle("videoAtivo");
-    trailerClose.pause();
-    trailerClose.currentTime = 0;
-
+function fecharVideo() {
+    trailer.classList.remove("videoAtivo");
+    trailerVideo.pause();
+    trailerVideo.currentTime = 0;
 }
+
+document.querySelector(".abrirVideoBtn").addEventListener('click', abrirVideo);
+document.querySelector(".fecharVideoBtn").addEventListener('click', fecharVideo);

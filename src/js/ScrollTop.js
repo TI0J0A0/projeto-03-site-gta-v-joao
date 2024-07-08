@@ -1,20 +1,24 @@
+const scrollAnimaSelector = '[data-anima="scroll"]';
+const windowHeightMultiplier = 2.0;
+const threshold = window.innerHeight * windowHeightMultiplier;
+let scrollAnima = document.querySelector(scrollAnimaSelector);
 
-const scrollAnima = document.querySelector('[data-anima="scroll"]');
-const metadewindow = window.innerHeight * 2.0;
-
-
-function animaScroll(){
-    const itemTopo = scrollAnima.getBoundingClientRect().top;
-
-    const itemVisivel = itemTopo - metadewindow < 0;
-
-    if(itemVisivel){
-        scrollAnima.classList.add('show-button');
-    }else{
-        scrollAnima.classList.remove('show-button');
+function animaScroll() {
+    if (!scrollAnima) {
+        scrollAnima = document.querySelector(scrollAnimaSelector);
+        if (!scrollAnima) return;
     }
-};
 
+    const itemTop = scrollAnima.getBoundingClientRect().top;
+    const itemVisible = itemTop - threshold < 0;
 
+    scrollAnima.classList.toggle('show-button', itemVisible);
+}
 
-window.addEventListener('scroll', animaScroll);
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+    if (scrollTimeout) {
+        cancelAnimationFrame(scrollTimeout);
+    }
+    scrollTimeout = requestAnimationFrame(animaScroll);
+});
