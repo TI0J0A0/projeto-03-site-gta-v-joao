@@ -256,8 +256,9 @@ margin-bottom: 25px;
 .about-gta-online .details-gta-online .bckgd-section2{
  margin-top: -0px;
  width: 100%;
- height: 1076px;
+ height: 100%;
  object-fit: cover;
+
 }
 
 
@@ -676,11 +677,11 @@ footer {
 
 }
 .footer-gta .footer-information a:hover{
-  color: #fc5017;
+  color: #fcaf17;
 }
 
 .footer-gta .footer-social-media .socials-medias a:hover{
-  color: #fc5017;
+  color: #fcaf17;
 }
 
 .circle-top .topo{
@@ -702,7 +703,7 @@ footer {
 }
 
 .circle-top .topo:hover{
-  background-color: #fc5017;
+  background-color: #fcaf17;
 }
 
 .show-button .topo{
