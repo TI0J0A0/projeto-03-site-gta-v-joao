@@ -17,7 +17,6 @@ During development, we faced and resolved several technical challenges:
 
 RESPONSIVE DESIGN: We used media queries and flexible design techniques to ensure the website works well across different devices and screen sizes.
 
-DESIGN RESPONSIVO: Utilizamos media queries e técnicas de design flexível para garantir que o site funcionasse bem em diferentes dispositivos e tamanhos de tela.
 ![Screenshot 2024-08-19 025913](https://github.com/user-attachments/assets/50137bb2-7c96-4fbe-bb3c-d94e951490e0)
 ![Screenshot 2024-08-19 025925](https://github.com/user-attachments/assets/ae94e309-2dfb-40bf-a42c-a022fa71ecf4)
 ![Screenshot 2024-08-19 025934](https://github.com/user-attachments/assets/d02aa0fe-fd53-4dce-bdc1-3291708cc655)
