@@ -1,22 +1,21 @@
-RECRIAÇÃO DO SITE DE VENDAS DO GTA V
-Este projeto é uma recriação do site de vendas do GTA V da Rockstar Games, desenvolvido por João Pedro Aguiar e Jean Barros. Utilizamos HTML, CSS e JavaScript para simular a experiência do site original com algumas personalizações e soluções criativas para desafios técnicos.
+GTA V SALES WEBSITE RECREATION
+This project is a recreation of Rockstar Games' GTA V sales website, developed by João Pedro Aguiar and Jean Barros. We used HTML, CSS, and JavaScript to simulate the experience of the original site, incorporating customizations and creative solutions to technical challenges.
 
-DESCRIÇÃO DO PROJETO
-O objetivo deste projeto foi replicar o site de vendas do GTA V, focando em criar uma interface visualmente semelhante e funcional. O
-projeto inclui a estruturação do conteúdo, estilização e funcionalidades dinâmicas para oferecer uma experiência de usuário completa.
+PROJECT DESCRIPTION
+The goal of this project was to replicate the GTA V sales website, focusing on creating a visually similar and functional interface. The project includes content structuring, styling, and dynamic functionalities to provide a complete user experience.
 
-FUNCIONALIDADES:
-PÁGINA INICIAL: Recriação da página inicial com destaque para o jogo GTA V e suas principais características.
-PÁGINA DE PRODUTOS: Exibição detalhada dos produtos disponíveis, incluindo imagens e descrições.
-DESIGN RESPONSIVO: O site é responsivo e se adapta a diferentes tamanhos de tela, incluindo dispositivos móveis e desktops.
+FEATURES
+HOME PAGE: Recreation of the homepage, highlighting GTA V and its key features.
+PRODUCT PAGE: Detailed display of available products, including images and descriptions.
+RESPONSIVE DESIGN: The website is fully responsive and adapts to different screen sizes, including mobile devices and desktops.
+TECHNOLOGIES USED
+HTML: Content structuring and layout.
+CSS: Styling and visual design.
+JAVASCRIPT: Interactivity and dynamic features, such as the shopping cart and contact form.
+PROBLEM-SOLVING
+During development, we faced and resolved several technical challenges:
 
-TECNOLOGIAS UTILIZADAS:
-HTML: Estruturação do conteúdo e layout do site.
-CSS: Estilização e design visual do site.
-JAVASCRIPT: Interatividade e funcionalidades dinâmicas, como o carrinho de compras e o formulário de contato.
-
-SOLUÇÕES DE PROBLEMAS:
-Durante o desenvolvimento do projeto, enfrentamos e resolvemos vários desafios técnicos:
+RESPONSIVE DESIGN: We used media queries and flexible design techniques to ensure the website works well across different devices and screen sizes.
 
 DESIGN RESPONSIVO: Utilizamos media queries e técnicas de design flexível para garantir que o site funcionasse bem em diferentes dispositivos e tamanhos de tela.
 ![Screenshot 2024-08-19 025913](https://github.com/user-attachments/assets/50137bb2-7c96-4fbe-bb3c-d94e951490e0)
